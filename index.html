@@ -6,9 +6,16 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="loader">
+      <div class="loadingio-spinner-interwind-y16pme5lx2"><div class="ldio-8homxhg2kgt">
+        <div><div><div><div></div></div></div><div><div><div></div></div></div></div>
+        </div>
+      </div>
+    </div>
     <div class="header" id="hero">
       <div class="container">
         <div class="toogle-container">
@@ -78,22 +85,28 @@
               <div class="col-md-6 mb-4">
                 <div class="progressContainer">
                   <div class="details">
-                    <div class="skill text-white">UI UX Design</div>
-                    <div class="percent text-red">90%</div>
+                    <div class="skill text-white" data-aos="fade-zoom-in" data-aos-easing="linear"
+                    data-aos-duration="800">UI UX Design</div>
+                    <div class="percent text-red" data-aos="fade-zoom-in" data-aos-easing="linear"
+                    data-aos-duration="800">90%</div>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar"></div>
+                    <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear"
+                    data-aos-duration="1000" role="progressbar"></div>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 mb-4">
                 <div class="progressContainer">
                   <div class="details">
-                    <div class="skill text-white">Graphics Design</div>
-                    <div class="percent text-red">96%</div>
+                    <div class="skill text-white"data-aos="fade-right" data-aos-easing="linear"
+                    data-aos-duration="800">Graphics Design</div>
+                    <div class="percent text-red" data-aos="fade-right" data-aos-easing="linear"
+                    data-aos-duration="800">96%</div>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar two" role="progressbar"></div>
+                    <div class="progress-bar two" data-aos="fade-right" data-aos-easing="linear"
+                    data-aos-duration="1200" role="progressbar"></div>
                   </div>
                 </div>
               </div>
@@ -103,10 +116,12 @@
                 <div class="progressContainer">
                   <div class="details">
                     <div class="skill text-white">Frontend Development</div>
-                    <div class="percent text-red">86%</div>
+                    <div data-aos="fade-zoom-out" data-aos-easing="linear"
+                    data-aos-duration="800" class="percent text-red">86%</div>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar three" role="progressbar"></div>
+                    <div data-aos="fade-right" data-aos-easing="linear"
+                    data-aos-duration="800" class="progress-bar three" role="progressbar"></div>
                   </div>
                 </div>
               </div>
@@ -114,10 +129,11 @@
                 <div class="progressContainer">
                   <div class="details">
                     <div class="skill text-white">Backend Development</div>
-                    <div class="percent text-red">50%</div>
+                    <div data-aos="fade-bottom" class="percent text-red">50%</div>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar four" role="progressbar"></div>
+                    <div data-aos="fade-right" data-aos-easing="linear"
+                    data-aos-duration="1000" class="progress-bar four" role="progressbar"></div>
                   </div>
                 </div>
               </div>
@@ -129,49 +145,49 @@
       <section class="featured-work" id="work">
         <div class="container">
           <h1 class="text-center text-red">Featured Work</h1>
-          <ul class="text-white">
-            <li class="active">Graphics Design</li>
-            <li>Ui Ux Design</li>
-            <li>Frontend Development</li>
-            <li>Backend Development</li>
+          <ul class="text-white mb-5">
+            <li class="active" data-aos="fade-right">Graphics Design</li>
+            <li data-aos="fade-right">Ui Ux Design</li>
+            <li data-aos="fade-right">Frontend Development</li>
+            <li data-aos="fade-right">Backend Development</li>
           </ul>
           <div class="row">
-            <div class="col-md-4 col-sm-6 mb-2">
+            <div class="col-md-4 col-sm-6 mb-2" data-aos="zoom-in-right">
               <img class="image-fluid" src="./img/product-1.jpg" alt="">
               <div class="overlay">
                 <h5 class="text-white text-center">Brown Hawk</h5>
                 <p class="text-white text-center">Logo design for BrownHawk bee keeping, it contains the logo and brand identity</p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-2">
+            <div class="col-md-4 col-sm-6 mb-2" data-aos="zoom-in-right">
               <img class="image-fluid" src="./img/product-2.jpg" alt="">
               <div class="overlay">
                 <h5 class="text-white text-center">Dad logo</h5>
                 <p class="text-white text-center">Display ads daily logo and brand identity design</p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-2">
+            <div class="col-md-4 col-sm-6 mb-2" data-aos="zoom-in-right">
               <img class="image-fluid" src="./img/product-3.jpg" alt="">
               <div class="overlay">
                 <h5 class="text-white text-center">Food Server logo</h5>
                 <p class="text-white text-center">Food server is a food retailer app, where people can easy get there meal with no stress.</p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-2">
+            <div class="col-md-4 col-sm-6 mb-2" data-aos="zoom-in-right">
               <img class="image-fluid" src="./img/product-4.jpg" alt="">
               <div class="overlay">
                 <h5 class="text-white text-center">Spacemax logo</h5>
                 <p class="text-white text-center">Spacemax is an online education platform, there main niche is IT</p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-2">
+            <div class="col-md-4 col-sm-6 mb-2" data-aos="zoom-in-right">
               <img class="image-fluid" src="./img/product-5.jpg" alt="">
               <div class="overlay">
                 <h5 class="text-white text-center">Hybrid ways logo</h5>
                 <p class="text-white text-center">Hybrid ways is a civil Engineering company that deals with road construction.</p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-2">
+            <div class="col-md-4 col-sm-6 mb-2" data-aos="zoom-in-right">
               <img class="image-fluid" src="./img/product-6.jpg" alt="">
               <div class="overlay">
                 <h5 class="text-white text-center">Hawt spice logo</h5>
@@ -269,7 +285,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/particles.min.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+      AOS.init();
+
+      setTimeout(function(){
+          $(".loader").hide();
+      }, 1500);
+    </script>
 </body>
 </html>
