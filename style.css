@@ -88,9 +88,23 @@ p{
     line-height: 19px;
 }
 
+.bg-red{
+    background-color: var(--red);
+}
+
+.bg-red-50{
+    background-color: #A5052295;
+}
+
 .text-red{
     color: var(--red);
 }
+
+.text-white-50{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
 
 /* Hero section */
 .hero{
@@ -246,6 +260,68 @@ p{
     position: absolute;
     z-index: 4;
     transform: scale(1.01);
+}
+
+/* resume */
+.resume{
+    border-top: 3px solid var(--red);
+    border-bottom: 3px solid var(--red);
+}
+
+.content{
+    padding: 30px 24px 10px 24px;
+    border-top: 3px solid var(--red);
+    border-bottom: 3px solid var(--red);
+}
+
+/* contact */
+.contact{
+    border-bottom: 3px solid var(--red);
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icon a{
+    margin-right: 24px;
+    font-size: 24px;
+    color: var(--white);
+    transition: all .4s ease-in;
+}
+
+.social-icon a:hover{
+    color: var(--red);
+}
+
+.form{
+    padding: 98px 54px;
+}
+
+.form input, .form textarea{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+    padding: 16px 0;
+}
+
+.form input::placeholder, .form textarea::placeholder{
+    color: var(--white);
+}
+
+.form textarea{
+    min-height: 120px;
+}
+
+.form button{
+    border: none;
+    height: 50px;
+    width: 120px;
+    color: var(--red);
 }
 
 @media screen and (max-width: 700px){
