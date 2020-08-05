@@ -54,7 +54,6 @@ a:last-child{
 
 .container{
     width: 90%;
-    height: 100vh;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -210,6 +209,43 @@ p{
 
 .progress-bar.four{
     width: 50%;
+}
+
+/* featured work */
+.featured-work{
+    border-top: 3px solid var(--red);
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
+.featured-work ul{
+    width: 100%;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.featured-work ul li{
+    cursor: pointer;
+}
+
+.featured-work ul li:hover,
+.featured-work ul li.active{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-work img{
+    width: 100%;
+    height: auto;
+    transition: all 500ms ease-in;
+}
+
+.featured-work img:hover{
+    position: absolute;
+    z-index: 4;
+    transform: scale(1.01);
 }
 
 @media screen and (max-width: 700px){
