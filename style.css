@@ -213,11 +213,14 @@ p{
 }
 
 @media screen and (max-width: 700px){
+    h1{
+        font-size: 32px;
+    }
     .navbar-dark .navbar-nav .nav-link{
         text-align: center;
     }
 
     .about-image{
-        height: 400px;
+        height: 350px;
     }
 }
