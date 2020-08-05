@@ -251,21 +251,35 @@ p{
 }
 
 .featured-work img{
+    position: relative;
     width: 100%;
     height: auto;
     transition: all 500ms ease-in;
 }
 
-.featured-work img:hover{
+.featured-work .overlay{
     position: absolute;
-    z-index: 4;
-    transform: scale(1.01);
+    width: 94%;
+    height: 20%;
+    bottom: 1px;
+    left: 3%;
+    background-color: rgba(0, 0, 0, .6);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all .5s ease-in;
 }
 
 /* resume */
 .resume{
     border-top: 3px solid var(--red);
     border-bottom: 3px solid var(--red);
+}
+
+.resume .title{
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 10px;
 }
 
 .content{
@@ -328,11 +342,32 @@ p{
     h1{
         font-size: 32px;
     }
+
+    h5{
+        font-size: 16px;
+    }
+
     .navbar-dark .navbar-nav .nav-link{
         text-align: center;
     }
 
     .about-image{
         height: 350px;
+    }
+
+    .featured-work li{
+        font-size: 8px;
+    }
+
+    .featured-work li.active{
+        border-bottom: 1px solid var(--red);
+    }
+
+    .contact-info h5,.contact-info .social-icon{
+        text-align: center;
+    }
+
+    .title{
+        margin-top: 40px;
     }
 }

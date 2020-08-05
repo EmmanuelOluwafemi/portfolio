@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="hero">
       <div class="container">
         <div class="toogle-container">
           <div class="toggle-button"></div>
@@ -22,19 +22,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#work">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" href="#resume">Resume</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -50,7 +50,7 @@
       </div>
     </div>
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="row">
             <div class="col-md-6 about-content">
@@ -126,7 +126,7 @@
         </div>
       </section>
 
-      <section class="featured-work">
+      <section class="featured-work" id="work">
         <div class="container">
           <h1 class="text-center text-red">Featured Work</h1>
           <ul class="text-white">
@@ -138,32 +138,56 @@
           <div class="row">
             <div class="col-md-4 col-sm-6 mb-2">
               <img class="image-fluid" src="./img/product-1.jpg" alt="">
+              <div class="overlay">
+                <h5 class="text-white text-center">Title</h5>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-2">
               <img class="image-fluid" src="./img/product-2.jpg" alt="">
+              <div class="overlay">
+                <h5 class="text-white text-center">Title</h5>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-2">
               <img class="image-fluid" src="./img/product-3.jpg" alt="">
+              <div class="overlay">
+                <h5 class="text-white text-center">Title</h5>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-2">
               <img class="image-fluid" src="./img/product-4.jpg" alt="">
+              <div class="overlay">
+                <h5 class="text-white text-center">Title</h5>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-2">
               <img class="image-fluid" src="./img/product-5.jpg" alt="">
+              <div class="overlay">
+                <h5 class="text-white text-center">Title</h5>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-2">
               <img class="image-fluid" src="./img/product-6.jpg" alt="">
+              <div class="overlay">
+                <h5 class="text-white text-center">Title</h5>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="resume my-5 py-5">
+      <section class="resume my-5 py-5" id="resume">
         <div class="container">
           <h1 class="text-red text-center">Resume</h1>
           <p class="text-center text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, expedita?</p>
           <div class="row mb-5">
             <div class="col-md-6">
-              <p class="text-white text-center"><i class="fas fa-book-open pr-2"></i>Education</p>
+              <p class="text-white text-center mb-5 title"><i class="fas fa-book-open pr-2"></i>Education</p>
               <div class="content bg-red w-100 mb-2">
                 <p class="text-white-50">September 2010 - Present</p>
                 <h5 class="text-white">BENG in Computer Engineering</h5>
@@ -184,7 +208,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <p class="text-white text-center"><i class="fas fa-briefcase pr-2"></i>Experience</p>
+              <p class="text-white text-center mb-5 title"><i class="fas fa-briefcase pr-2"></i>Experience</p>
               <div class="content bg-red-50 w-100 mb-2">
                 <p class="text-white-50">September 2018 - Present</p>
                 <h5 class="text-white">Graphics designer at Freelancer.com</h5>
@@ -207,7 +231,7 @@
           </div>
         </div>
       </section>
-      <section class="contact pb-5">
+      <section class="contact pb-5" id="contact">
         <h1 class="text-red text-center">HAVE ANY <span class="text-white">PROJECT?</span></h1>
         <p class="text-center text-white">Just Say Hello via my Email.</p>
         <div class="container">
