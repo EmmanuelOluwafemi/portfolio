@@ -275,6 +275,10 @@ p{
     transition: all .5s ease-in;
 }
 
+.featured-work .overlay p{
+    width: 80%;
+}
+
 /* resume */
 .resume{
     border-top: 3px solid var(--red);
