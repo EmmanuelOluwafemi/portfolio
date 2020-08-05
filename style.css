@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+    --black: #070914;
+    --red: #A50522;
+    --white: #fff;
+    --inter: 'Inter', sans-serif;
+}
+
+/* Global styles */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--inter);
+}
+
+html{
+    /* overflow: hidden; */
+}
+
+body{
+    background-color: var(--black);
+    width: 100%;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 0 20px;
+}
+
+a:last-child{
+    padding-right: 0;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: var(--red);
+}
+
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+}
+
+h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 39px;
+}
+
+p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 19px;
+}
+
+.text-red{
+    color: var(--red);
+}
+
+/* Hero section */
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1{
+    animation: type 5s steps(13) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid var(--red);
+    width: 13ch;
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+
+    100%{
+        width: 13ch;
+    }
+}
+
+.particles-js{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+/* Main Section */
+
+/* About Section */
+.about{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 48px;
+    border-top: 3px solid var(--red);
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content h1{
+    text-align: center;
+}
+
+.about-content p{
+    width: 100%;
+    text-align: center;
+}
+
+.about-image{
+    width: 100%;
+    height: 500px;
+
+}
+
+.about-image .innner-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    border: 14px solid var(--red);
+}
+
+.about-image .innner-container img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+/* my skill */
+
+.skill .progressContainer{
+    width: 100%;
+}
+
+.skill .progressContainer .details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.progress{
+    width: 100%;
+    height: 16px;
+    border-radius: 30px;
+    background: rgba(255, 254, 254, 0.58)
+}
+
+.progress-bar{
+    width: 90%;
+    height: 100%;
+    background-color: var(--red);
+}
+
+.progress-bar.two{
+    width: 96%;
+}
+
+.progress-bar.three{
+    width: 86%;
+}
+
+.progress-bar.four{
+    width: 50%;
+}
+
+@media screen and (max-width: 700px){
+    .navbar-dark .navbar-nav .nav-link{
+        text-align: center;
+    }
+
+    .about-image{
+        height: 400px;
+    }
+}
