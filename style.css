@@ -257,6 +257,10 @@ p{
     transition: all 500ms ease-in;
 }
 
+.featured-work img:hover{
+    transform: scale(.94);
+}
+
 .featured-work .overlay{
     position: absolute;
     width: 94%;
